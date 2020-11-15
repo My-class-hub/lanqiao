@@ -35,9 +35,9 @@ class MainCanvas extends Canvas
 	}
 	
 	public void paint(Graphics g){
-		g.setColor(255,0,0);
+		g.setColor(0,0,0);
 		g.fillRect(0,0,getWidth(),getHeight());
-		g.drawImage(currentImg,100,130,0);
+		g.drawImage(currentImg,110,140,0);
 	}
 	public void keyPressed(int keyCode){
 		int action = getGameAction(keyCode);
@@ -57,8 +57,8 @@ class MainCanvas extends Canvas
 			currentImg = downImg;
 			repaint();
 		}
-		else{
-			new throw Exception("按键不属于对应的keyCode无法转向");
-		}
+//		else{
+//			new throw Exception("按键不属于对应的keyCode无法转向");
+//		}
 	}
 }
